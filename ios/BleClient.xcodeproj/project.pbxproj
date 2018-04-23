@@ -27,9 +27,9 @@
 
 /* Begin PBXFileReference section */
 		D73F06E81D48E17B00AD5963 /* libBleClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBleClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7970CE41D4F8E5D00231A1B /* BleClientManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BleClientManager.framework; path = Framework/BleClientManager.framework; sourceTree = "<group>"; };
-		D7970CE51D4F8E5D00231A1B /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = Framework/RxBluetoothKit.framework; sourceTree = "<group>"; };
-		D7970CE61D4F8E5D00231A1B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Framework/RxSwift.framework; sourceTree = "<group>"; };
+		D7970CE41D4F8E5D00231A1B /* BleClientManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BleClientManager.framework; sourceTree = "<group>"; };
+		D7970CE51D4F8E5D00231A1B /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBluetoothKit.framework; sourceTree = "<group>"; };
+		D7970CE61D4F8E5D00231A1B /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		D7D202771D4F614D00E10F6A /* BleClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleClient.m; sourceTree = "<group>"; };
 		D7D202781D4F614D00E10F6A /* BleClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
