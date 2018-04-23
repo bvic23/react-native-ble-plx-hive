@@ -1,0 +1,11 @@
+framework module BleClientManager {
+  umbrella header "BleClientManager.h"
+
+  export *
+  module * { export * }
+}
+
+module BleClientManager.Swift {
+    header "BleClientManager-Swift.h"
+    requires objc
+}

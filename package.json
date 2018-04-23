@@ -1,0 +1,46 @@
+{
+  "name": "react-native-ble-plx-hive",
+  "version": "0.9.0",
+  "description": "React Native Bluetooth Low Energy library",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "postinstall": "node ./postinstall.js",
+    "test": "jest",
+    "lint": "flow && documentation lint index.js",
+    "docs": "documentation build index.js -o docs --config documentation.yml -f html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvic23/react-native-ble-plx-hive.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.1",
+    "babel-jest": "22.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "documentation": "5.3.5",
+    "eslint": "4.15.0",
+    "eslint-plugin-flowtype": "2.41.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jest": "21.7.0",
+    "eslint-plugin-react": "7.5.1",
+    "flow-bin": "^0.63.0",
+    "jest": "22.2.1",
+    "prettier": "1.10.2",
+    "react": "16.2.0",
+    "react-native": "0.53.0"
+  },
+  "keywords": ["React", "Native", "Bluetooth", "Low", "Energy", "BLE", "Polidea", "bvic23"],
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": ["<rootDir>/examples"]
+  },
+  "author": "Polidea, bvic23",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bvic23/react-native-ble-plx-hive/issues"
+  },
+  "homepage": "https://github.com/bvic23/react-native-ble-plx-hive#readme"
+}
