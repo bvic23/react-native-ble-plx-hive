@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "lint": "flow && documentation lint index.js",
+    "lint": "flow && documentation lint index.js"
   },
   "repository": {
     "type": "git",
