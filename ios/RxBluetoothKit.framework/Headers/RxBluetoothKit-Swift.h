@@ -173,7 +173,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import CoreBluetooth;
-@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -190,20 +189,6 @@ SWIFT_MODULE_NAMESPACE_PUSH("RxBluetoothKit")
 @property (nonatomic, readonly, copy) NSString * _Nonnull logDescription;
 @end
 
-@class CBPeripheral;
-@class NSNumber;
-
-SWIFT_CLASS("_TtC14RxBluetoothKit31CBCentralManagerDelegateWrapper")
-@interface CBCentralManagerDelegateWrapper : NSObject <CBCentralManagerDelegate>
-- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
-- (void)centralManager:(CBCentralManager * _Nonnull)central willRestoreState:(NSDictionary<NSString *, id> * _Nonnull)dict;
-- (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)rssi;
-- (void)centralManager:(CBCentralManager * _Nonnull)central didConnectPeripheral:(CBPeripheral * _Nonnull)peripheral;
-- (void)centralManager:(CBCentralManager * _Nonnull)central didFailToConnectPeripheral:(CBPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
-- (void)centralManager:(CBCentralManager * _Nonnull)central didDisconnectPeripheral:(CBPeripheral * _Nonnull)peripheral error:(NSError * _Nullable)error;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 @interface CBCharacteristic (SWIFT_EXTENSION(RxBluetoothKit))
 @property (nonatomic, readonly, copy) NSString * _Nonnull logDescription;
@@ -215,32 +200,8 @@ SWIFT_CLASS("_TtC14RxBluetoothKit31CBCentralManagerDelegateWrapper")
 @end
 
 
-
-
 @interface CBPeripheral (SWIFT_EXTENSION(RxBluetoothKit))
 @property (nonatomic, readonly, copy) NSString * _Nonnull logDescription;
-@end
-
-@class CBService;
-@class CBL2CAPChannel;
-
-SWIFT_CLASS("_TtC14RxBluetoothKit27CBPeripheralDelegateWrapper")
-@interface CBPeripheralDelegateWrapper : NSObject <CBPeripheralDelegate>
-- (void)peripheralDidUpdateName:(CBPeripheral * _Nonnull)peripheral;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didModifyServices:(NSArray<CBService *> * _Nonnull)invalidatedServices;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didReadRSSI:(NSNumber * _Nonnull)rssi error:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverServices:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverIncludedServicesForService:(CBService * _Nonnull)service error:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverCharacteristicsForService:(CBService * _Nonnull)service error:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didWriteValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverDescriptorsForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateValueForDescriptor:(CBDescriptor * _Nonnull)descriptor error:(NSError * _Nullable)error;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didWriteValueForDescriptor:(CBDescriptor * _Nonnull)descriptor error:(NSError * _Nullable)error;
-- (void)peripheralIsReadyToSendWriteWithoutResponse:(CBPeripheral * _Nonnull)peripheral;
-- (void)peripheral:(CBPeripheral * _Nonnull)peripheral didOpenL2CAPChannel:(CBL2CAPChannel * _Nullable)channel error:(NSError * _Nullable)error SWIFT_AVAILABILITY(ios,introduced=11) SWIFT_AVAILABILITY(macos,introduced=10.13);
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
