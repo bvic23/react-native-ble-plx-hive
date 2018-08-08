@@ -51,7 +51,7 @@ export class BleError extends Error {
       this.androidErrorCode = null
       this.reason = nativeBleError
     } else {
-      super(fillStringWithArguments(BleErrorCodeMessage[nativeBleError.errorCode], nativeBleError))
+      super(BleErrorCodeMessage[nativeBleError.errorCode])
       this.errorCode = nativeBleError.errorCode
       this.attErrorCode = nativeBleError.attErrorCode
       this.iosErrorCode = nativeBleError.iosErrorCode
