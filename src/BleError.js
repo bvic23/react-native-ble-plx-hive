@@ -50,6 +50,13 @@ export class BleError extends Error {
       this.iosErrorCode = null
       this.androidErrorCode = null
       this.reason = nativeBleError
+    } else if (nativeBleError.code && nativeBleError.message) {
+      super(BleErrorCodeMessage[nativeBleError.code])
+      this.errorCode = nativeBleError.code
+      this.attErrorCode = null
+      this.iosErrorCode = null
+      this.androidErrorCode = null
+      this.reason = nativeBleError.message
     } else {
       super(BleErrorCodeMessage[nativeBleError.errorCode])
       this.errorCode = nativeBleError.errorCode
