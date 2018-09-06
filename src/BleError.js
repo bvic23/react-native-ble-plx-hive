@@ -50,6 +50,7 @@ export class BleError extends Error {
       this.iosErrorCode = null
       this.androidErrorCode = null
       this.reason = nativeBleError
+    // $FlowFixMe
     } else if (nativeBleError.code && nativeBleError.message) {
       super(BleErrorCodeMessage[nativeBleError.code])
       this.errorCode = nativeBleError.code
