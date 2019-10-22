@@ -1,6 +1,6 @@
 {
   "name": "react-native-ble-plx-hive",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React Native Bluetooth Low Energy library",
   "main": "index.js",
   "directories": {
@@ -30,10 +30,21 @@
     "react": "16.2.0",
     "react-native": "0.53.0"
   },
-  "keywords": ["React", "Native", "Bluetooth", "Low", "Energy", "BLE", "Polidea", "bvic23"],
+  "keywords": [
+    "React",
+    "Native",
+    "Bluetooth",
+    "Low",
+    "Energy",
+    "BLE",
+    "Polidea",
+    "bvic23"
+  ],
   "jest": {
     "preset": "react-native",
-    "modulePathIgnorePatterns": ["<rootDir>/examples"]
+    "modulePathIgnorePatterns": [
+      "<rootDir>/examples"
+    ]
   },
   "author": "Polidea, bvic23",
   "license": "Apache-2.0",
